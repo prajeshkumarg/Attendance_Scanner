@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "374174250518",
+    "firebase_url": "https://attendance-scanner-5822c.firebaseio.com",
+    "project_id": "attendance-scanner-5822c",
+    "storage_bucket": "attendance-scanner-5822c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374174250518:android:d5a7a3061c18d43db4a737",
+        "android_client_info": {
+          "package_name": "com.example.attendancescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374174250518-rrp5s5gd19klgsumrici3c3nefhjebv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0f57x8rWEx2i1Y6xpuKNfGgz9QxHKJ2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374174250518-rrp5s5gd19klgsumrici3c3nefhjebv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
