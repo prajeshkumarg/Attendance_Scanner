@@ -13,10 +13,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.vision.barcode.Barcode;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     private TextView result;
     private Button button;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         button=findViewById(R.id.scan);
+        result=findViewById(R.id.result);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,10 +46,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==REQ){
-            if(data!=null){
-                Barcode barcode=data.getParcelableExtra("barcode");
+        if(requestCode==REQ && resultCode==RESULT_OK) {
+            if (data != null) {
+                Barcode barcode = data.getParcelableExtra("barcode");
                 result.setText(barcode.displayValue);
+            }
+            else{
+                Toast.makeText(getApplicationContext(),"Failed to get data",Toast.LENGTH_SHORT).show();
             }
         }
     }

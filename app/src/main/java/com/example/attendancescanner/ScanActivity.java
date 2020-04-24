@@ -71,10 +71,12 @@ public class ScanActivity extends AppCompatActivity {
 
             @Override
             public void receiveDetections(Detector.Detections<Barcode> detections) {
-                SparseArray<Barcode> barcode=detections.getDetectedItems();
+                final SparseArray<Barcode> barcode=detections.getDetectedItems();
                 if(barcode.size()>0){
-                    String t= barcode.valueAt(0).toString();
-                    Toast.makeText(getApplicationContext(),t,Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent();
+                    intent.putExtra("barcode",barcode.valueAt(0));
+                    setResult(RESULT_OK,intent);
+                    finish();
                 }
             }
         });
