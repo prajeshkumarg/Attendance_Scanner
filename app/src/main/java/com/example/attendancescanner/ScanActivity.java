@@ -45,7 +45,7 @@ public class ScanActivity extends AppCompatActivity {
             public void surfaceCreated(SurfaceHolder holder) {
                 try {
                     cameraSource.start(surfaceView.getHolder());
-                    Toast.makeText(getApplicationContext(),"Working cam",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),"Working cam",Toast.LENGTH_SHORT).show();
                 }
                 catch (IOException e){
                     e.printStackTrace();
