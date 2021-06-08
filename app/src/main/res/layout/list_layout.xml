@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    app:contentPaddingLeft="8dp"
+    app:contentPaddingRight="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="13/08/2020"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:text="Students Present : 30"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center_vertical"
+            android:scaleType="center"
+            app:srcCompat="@drawable/right_arrow_icon"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

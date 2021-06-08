@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_nameh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="Name:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/textView_profile"
+            app:layout_constraintTop_toBottomOf="@+id/textView_profile" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins"
+            android:text="Prajesh Kumar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="@id/profile_nameh"
+            app:layout_constraintTop_toBottomOf="@+id/profile_nameh" />
+
+
+        <TextView
+            android:id="@+id/profile_emailh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Email:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/profile_name"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins"
+            android:text="prajeshk@gmail.com"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@id/profile_emailh"
+            app:layout_constraintTop_toBottomOf="@+id/profile_emailh" />
+
+        <TextView
+            android:id="@+id/profile_classesh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/poppins"
+            android:text="Classes"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/profile_email"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_classes"
+            android:background="@color/colorPrimary"
+            android:divider="@color/white"
+            app:layout_constraintStart_toStartOf="@id/profile_classesh"
+            app:layout_constraintTop_toBottomOf="@+id/profile_classesh"
+            android:layout_marginTop="8dp"/>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/add_new_classroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_btn_fill"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Add new classroom"
+                android:textAllCaps="false"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/profile_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_btn_stroke"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
